@@ -1,17 +1,18 @@
 <h1>All cocktails</h1>
 
-<div class="fex-container">
-  <% @cocktails.each do |cocktail| %>
-  <dix class="flex-item">
-    <ul style="list-style-type:none;">
-      <li><%= cocktail.name %></li>
-      <li><%= link_to 'Show', cocktail %></li>
-    </ul>
+
+
+<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <% @cocktails.each do |cocktail| %>
+    <h5 class="card-title"><%= cocktail.name %></h5>
+    <a href="#" class="btn btn-primary"><%= link_to 'Show', cocktail %></a>
     <% end %>
-  </dix>
+  </div>
 </div>
 
-<%= link_to 'New Cocktail', new_cocktail_path %>
+
 
 
 
